@@ -1,5 +1,11 @@
-// package main
+package main
 
-// func main() {
-// 	println("Hello, World!")
-// }
+import (
+	"luna/src/modules/listening"
+	"luna/src/utils"
+)
+
+func main() {
+	command := listening.ListenForCommand()
+	utils.Debug("[command]", command)
+}
